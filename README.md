@@ -1,5 +1,5 @@
 # finalskspipeline
-	The Best (finally successful) Skillstorm Jenkins Pipeline Project! 
+	The Best (finally!) Skillstorm Jenkins Pipeline Project! 
 ## What is this Repo For
   Repo for final skillstorm jenkins pipeline project
 # Create VM in AWS
