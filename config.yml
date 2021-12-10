@@ -1,0 +1,31 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1USXhNREl4TXpVeE0xb1hEVE14TVRJd09ESXhNelV4TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSzBzClNrbXZtNnhPS1dLYlpEeXdMRzVNd3NwR2t5eHNiRXMwVHJmc0FHeHRUTzFZWmRPYTBjODJ5dXcxUEJWaktyN2oKZkx0L1ZLUDBtTWpHVVdySmlwTUFFUThWbFMveWZsYThuNXEzVFdyNlVTMlc3RldGUlpBemdUVzVlazk4dUtRcgpvUkF2Um53N1RLcWJGYVk1aklBYnhEQkxiQjNHOEJUdi8wd1Uxa1l1K2gzVUFENmxhaVJhOGlUeG9MTDR1aHBLCjNuRkdycy8zM25ubjd2K1Nydno0alZNZXV4RW9ldFM4NE40VXUzSzhFdWQ5bGU3SE8xMytHZlUvc0VJbVFxMGsKd3ovT084SHQ4SlNNSUxUamdzSVlXVTQyTFFNeFRtbktRdDUxNlRLUWlBeVpQdzBxUlBGQXFVSmNmRjJuUzVyYQpaYmFEcjZzVDZlM1BML3NIWDhNQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOK3BwYWhzRTV1OGF6Y1R5WjI0QTRvaVIxVWtNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBeGE2TVZNMEkyOEhMcklTZUJ5NWtJbjFkRkxnaGduWWMreHhHR1BoQW8wZHBPV0Y1TgpXcnZEYVhuUGp2SWw0c2N5NFlZbmw2RDB1dFhQVXFPVjk5S3k1SkR5aVFLaXF2bStkUUV2SUlmRklHNjdiYzN5CitPYnhUcTE5dkpZWGY2RXVQR29xNjNmczBHM2NPRGhNaFhDRnpQV3JKUWlKUjNFU0VpTlRQSkx5VS9WekFQSy8KdDY3elhVak1TaTVKZXNkcDlEeWhTOFNobGVQSExHbzVtREJsN2gxRlZOSW1oK0tMMFAyYWplTFJZOWVNVzltbgpocXRnQUR2S1JVVXM5QTd0L2l4SlJaS25yMzFJZm9uNHZwOHUxeHpsU0p5bjhiNVdQSzZZRmhPbnJ4bjBCRGp0CkhVa2REZEc5eHpaejJZMzZ4ellMeWMydHBRWDlFK2V3ZnFseAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://030436A4AB434A6E232C68C06BC4C88C.gr7.us-west-1.eks.amazonaws.com
+  name: pipeline.us-west-1.eksctl.io
+contexts:
+- context:
+    cluster: pipeline.us-west-1.eksctl.io
+    user: Kal@pipeline.us-west-1.eksctl.io
+  name: Kal@pipeline.us-west-1.eksctl.io
+current-context: Kal@pipeline.us-west-1.eksctl.io
+kind: Config
+preferences: {}
+users:
+- name: Kal@pipeline.us-west-1.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - pipeline
+      - --region
+      - us-west-1
+      command: aws
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+      provideClusterInfo: false
