@@ -10,6 +10,7 @@ pipeline {
     stages {
         stage('Build image') {
             steps {
+		sh 'mvn clean install'    
                 sh 'docker build -t kvaughn2021/maven:latest .'
             }
         }
