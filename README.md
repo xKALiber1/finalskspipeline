@@ -1,5 +1,5 @@
 # finalskspipeline
-	The Best Webhooked maybe Skillstorm Jenkins Pipeline Project! 
+	The Best (scm pulled without wwebhooks because i hate those when they never work) Skillstorm Jenkins Pipeline Project! 
 ## What is this Repo For
   Repo for final skillstorm jenkins pipeline project
 # Create VM in AWS
