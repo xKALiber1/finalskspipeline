@@ -1,13 +1,13 @@
 aws ec2 run-instances \
---image-id ami-0dfb4741f7bef18dc \
---security-group-ids sgr-08e553c555b9c4e3b \
+--image-id ami-ami-01216a3493f3ae184 \
+--security-group-ids sg-0e20b3038e5d6213f \
 --instance-type t2.medium \
 --key-name CaliforniaKeyPair \
 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Jenkins}]'
 
 aws ec2 run-instances \
---image-id ami-0dfb4741f7bef18dc \
---security-group-ids sgr-08e553c555b9c4e3b \
+--image-id ami-ami-01216a3493f3ae184 \
+--security-group-ids sg-0e20b3038e5d6213f \
 --instance-type t2.medium \
 --key-name CaliforniaKeyPair \
 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=WebServer}]'
