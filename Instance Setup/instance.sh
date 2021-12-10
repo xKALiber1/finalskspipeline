@@ -1,12 +1,12 @@
 aws ec2 run-instances \
---image-id ami-7 \
+--image-id ami-0dfb4741f7bef18dc \
 --security-group-ids sg-0e20b3038e5d6213f \
 --instance-type t2.medium \
 --key-name CaliforniaKeyPair \
 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Jenkins}]'
 
 aws ec2 run-instances \
---image-id ami-7 \
+--image-id ami-0dfb4741f7bef18dc \
 --security-group-ids sg-0e20b3038e5d6213f \
 --instance-type t2.medium \
 --key-name CaliforniaKeyPair \
