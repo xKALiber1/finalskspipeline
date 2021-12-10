@@ -1,5 +1,5 @@
 # finalskspipeline
-	The Best (scm works but maybe if i change to /payload) Skillstorm Jenkins Pipeline Project! 
+	The Best (scm works but payload doesnt) Skillstorm Jenkins Pipeline Project! 
 ## What is this Repo For
   Repo for final skillstorm jenkins pipeline project
 # Create VM in AWS
